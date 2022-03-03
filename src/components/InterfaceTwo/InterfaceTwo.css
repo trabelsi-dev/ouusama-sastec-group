@@ -35,7 +35,7 @@ position: relative;
 }
 .img:hover{
   transform: scale(1.05); /* Equal to scaleX(0.7) scaleY(0.7) */
-  transition: .4s;
+  transition: .5s;
 
 }
 .time {

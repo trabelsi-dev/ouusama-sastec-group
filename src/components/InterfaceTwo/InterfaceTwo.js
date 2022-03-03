@@ -1,34 +1,40 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 import './InterfaceTwo.css'
-import Videos from '../../data/videos.json'
+//import Videos from '../../data/videos.json'
+import { getVideo } from '../../actions/video.action';
+
+import { useDispatch, useSelector } from "react-redux";
+
 
 const InterfaceTwo = () => {
+  const dispatch = useDispatch()
+
+  const data = useSelector((state) => state.videoReducer);
+  //const { duration,logo, description } = data
+
+useEffect (() => {
+  dispatch(getVideo())
+
+},[dispatch])
+  
+  console.log("video ",data);
+
   return (
     <>
-      <div className="container">
+    <div className="container">
 
-        {Videos.map(video => {
-          return (
-
-
+    {
+      data.map(res => {
+        return (
             <div className='Rectangle'>
-
-              <img src={video.logo} alt="video" className='img' />
-          
-                <div className='time'>{video.duration}</div>
-                <div className='footerVideo description' >{video.description}</div>
-
+              <img src={res.logo} alt="video" className='img' />         
+                <div className='time'>{res.duration}</div>
+                <div className='footerVideo description' >{res.description}</div>
             </div>
-
-
-          )
-        })}
-
-
-      </div>
-
-
-
+          )    
+    })}
+      
+    </div>
 
     </>
   );
