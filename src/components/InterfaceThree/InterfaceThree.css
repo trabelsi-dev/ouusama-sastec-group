@@ -1,0 +1,15 @@
+.footer {
+    background: #575757;
+    height: 91px;
+  margin: 27px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*padding: 20px 24px 20px 890px;*/
+}
+
+
+.Copyright-Dassault-A{
+    margin-left: auto;
+   
+}
