@@ -25,7 +25,7 @@ const InterfaceTwo = () => {
       <div className="container">
 
         {data ? (
-          Object.keys(data).map((res, index) => {
+        data.map((res, index) => {
             return (
               <div key={index}>
                 <div className='Rectangle' >

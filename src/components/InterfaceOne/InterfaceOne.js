@@ -9,14 +9,16 @@ const InterfaceOne = () => {
 
   const dispatch = useDispatch()
 
+  useEffect (() => {
+    dispatch(getTheme())
+  
+  },[dispatch])
+
   const data = useSelector((state) => state.themeReducer);
   //const { duration,logo, description } = data
   console.log("theme", data);
 
-useEffect (() => {
-  dispatch(getTheme())
 
-},[dispatch])
 
   return (
     <>
@@ -25,7 +27,7 @@ useEffect (() => {
           <ul className="nav__links">
 
 
-            {Object.keys(data).map((theme,index) => {
+            {data.map((theme,index) => {
               return(
               <li key={index}>
                 <a href="/">{theme.name}

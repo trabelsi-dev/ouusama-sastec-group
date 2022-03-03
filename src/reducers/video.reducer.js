@@ -3,7 +3,7 @@ import {
 
 } from "../actions/video.action";
 
-const initialState = {};
+const initialState = [];
 
 export default function videoReducer(state = initialState, action) {
     switch (action.type) {

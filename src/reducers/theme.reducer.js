@@ -3,7 +3,7 @@ import {
 
 } from "../actions/theme.action";
 
-const initialState = {};
+const initialState = [];
 
 export default function themeReducer(state = initialState, action) {
     switch (action.type) {
