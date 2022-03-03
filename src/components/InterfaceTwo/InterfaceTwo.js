@@ -6,19 +6,29 @@ const InterfaceTwo = () => {
   return (
     <>
       <div className="container">
-      
-      {Videos.map(video => {
-        return(
-          <img src={video.logo}  alt="video" className='img' />
 
-        )
-      })}
-       
+        {Videos.map(video => {
+          return (
+
+
+            <div className='Rectangle'>
+
+              <img src={video.logo} alt="video" className='img' />
+          
+                <div className='time'>{video.duration}</div>
+                <div className='footerVideo description' >{video.description}</div>
+
+            </div>
+
+
+          )
+        })}
+
 
       </div>
 
 
-    
+
 
     </>
   );

@@ -21,13 +21,38 @@
   
 }
 .Rectangle {
+  
+position: relative;
+ /* background-color: steelblue;*/
+ /* color: #fff;*/
+ /* border: skyblue 1px solid;*/
 
-  background-color: steelblue;
-  color: #fff;
-  padding: 20px;
-  border: skyblue 1px solid;
 }
-.container .img{
+ .img{
   width: 250px;
   height: 191px;
+  
+}
+.img:hover{
+  transform: scale(1.05); /* Equal to scaleX(0.7) scaleY(0.7) */
+  transition: .4s;
+
+}
+.time {
+  position: absolute;
+  top: 5%;
+  right: 15%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2px;
+}
+
+.footerVideo {
+  position: absolute;
+  bottom: 5%;
+  width: 87%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2px;
+
 }
