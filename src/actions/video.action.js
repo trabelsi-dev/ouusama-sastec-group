@@ -8,6 +8,7 @@ export const getVideo = () => {
         .get(`http://localhost:5000/video`)
         .then((res)=>{ 
         dispatch({ type: GET_VIDEO, payload: res.data });
+        console.log("data" , res.data);
     })
     .catch((err) => console.log(err));
 };

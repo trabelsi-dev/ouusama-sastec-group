@@ -12,7 +12,7 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import rootReducer from "./reducers";
 /* becch inbadlhom bil get te3i  */
 import { getVideo } from "./actions/video.action";
-//import { getUser } from "./actions/user.actions";
+import { getTheme } from "./actions/theme.action";
 
 const store = createStore(
   // heda fichier regroupera tout le reducer donc qu'il permetrra de tout mettre le store par exemple store utilisateur les messages 
@@ -24,7 +24,7 @@ const store = createStore(
 
 // bech irodha bil 5idma te3i inchlah
 store.dispatch(getVideo());
-//store.dispatch(getUser());
+store.dispatch(getTheme());
 
 ReactDOM.render(
   <Provider store={store}>

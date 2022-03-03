@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server":"json-server --watch videos.json --port 5000"
+    "server":"json-server --watch videos.json --port 5000",
+    "servertheme":"json-server --watch themes.json --port 5100"
   },
   "eslintConfig": {
     "extends": [

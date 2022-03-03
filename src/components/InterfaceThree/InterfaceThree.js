@@ -5,7 +5,7 @@ const InterfaceThree = () => {
   return (
     <>
       <footer className='footer'>
-        <span class="Copyright-Dassault-A">
+        <span className="Copyright-Dassault-A">
           Copyright Dassault Aviation 2021 © - Conditions générales d'utilisation
         </span>
       </footer>
